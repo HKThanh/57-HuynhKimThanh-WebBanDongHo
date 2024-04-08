@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/wishlist.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="top-header-container">
+                    <div class="top-header-container-left">
+                        <div class="address">
+                            <span><img src="..media/img/Address.png" alt=""></span>
+                            <a href="#" class="text-white">319-C16 Lý Thường Kiệt, P.15, Q.11, TP.HCM</a>
+                        </div>
+                        <div class="phonenumber">
+                            <i class="fa fa-phone"></i>
+                            <span>0123456789</span>
+                        </div>
+                    </div>
+                    <div class="top-header-container-right">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="center-header">
+                <div class="center-header-container">
+                    <div class="center-header-logo">
+                        <a href="./HomePage.html"><img src="../media/img/LogoWeb.png" alt=""></a>
+                    </div>
+                    <div class="center-header-center">
+                        <input type="search" name="" id="header-search" placeholder="Tìm kiếm...">
+                        <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="center-header-right">
+                        <button id="login">ĐĂNG NHẬP</button>
+                        <div class="wishlist"><a href="./wishlist.html"><i class="fa-solid fa-heart"></i></a></div>
+                        <div class="shopping-bag">
+                            <a href="./ShoppingCart.html">
+                                <img src="../media/img/Shopping-bag.png" alt="">
+                            </a>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-header">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./HomePage.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ServiceCenterAddressPage.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./MaleWatchesPage.html">ĐỒNG HỒ NAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FemaleWatchesPage.html">ĐỒNG HỒ NỮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./BlogPage.html">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUsPage.html">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <table id="wishlist-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <h4>PRODUCT NAME</h3>
+                        </th>
+                        <th>
+                            <h4>UNITPRICE</h4>
+                        </th>
+                        <th>
+                            <h4>STOCK STATUS</h4>
+                        </th>
+                        <th style="width: 140px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../media/img/classico2_220x180.png" alt="">Classico 2</td>
+                        <td>700.000 &#8363;</td>
+                        <td><strong>Còn hàng</strong></td>
+                        <td class="button-remove"><button>-</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../media/img/Simple2_220x180.png" alt="">Simple 2</td>
+                        <td>700.000 &#8363;</td>
+                        <td><strong>Hết hàng</strong></td>
+                        <td class="button-remove"><button>-</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../media/img/Simple10_220x180.png" alt="">Simple 10</td>
+                        <td>700.000 &#8363;</td>
+                        <td><strong>Còn hàng</strong></td>
+                        <td class="button-remove"><button>-</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <div class="registerforinfo">
+                <span>ĐĂNG KÝ NHẬN THÔNG TIN</span>
+                <div class="emailforregister">
+                    <input type="text" id="txtEmail" placeholder="Email...">
+                    <input type="submit" value="ĐĂNG KÝ" id="registersubmit">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="top-footer">
+                    <div class="container-fluid text-white">
+                        <div class="row">
+                            <div class="col-">
+                                <h5>THÔNG TIN LIÊN HỆ</h5>
+                                <div class="contact-info">
+                                    <img src="/IMG/contactlocation.png" width="40" alt="">
+                                    <span>319 C16 Lý Thường Kiệt, Phường 15, <br>
+                                    Quận 11, Tp.HCM</span>
+                                </div>
+                                <div class="contact-info">
+                                    <img src="/IMG/contactphonenum.png" alt="">
+                                    <span>0123456789</span>
+                                </div>
+                                <div class="contact-info">
+                                    <img src="/IMG/contactmail.png" alt="">
+                                    <span>demonhuterg@gmail.com <br>    
+                                        mon@mona.media</span>
+                                </div>
+                                <div class="contact-info">
+                                    <img src="/IMG/contactskype.png" alt="">
+                                    <span>demonhunterp</span>
+                                </div>
+                                <div class="contact-media">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                            <div class="col-">
+                                <h5>LIÊN KẾT</h5>
+                                <p><a href="./ServiceCenterAddressPage.html">Giới Thiệu</a></p>
+                                <p><a href="./MaleWatchesPage.html">Đồng hồ nam</a></p>
+                                <p><a href="./FemaleWatchesPage.html">Đồng hồ nữ</a></p>
+                                <p><a href="./BlogPage.html">Blogs</a></p>
+                                <p><a href="./AboutUsPage.html">Liên hệ</a></p>
+                            </div>
+                            <div class="col-">
+                                <h5>HỖ TRỢ</h5>
+                                <p>Hướng dẫn mua hàng</p>
+                                <p>Hướng dẫn thanh toán</p>
+                                <p>Chính sách bảo hành</p>
+                                <p>Chính sách đổi trả</p>
+                                <p>Tư vấn khách hàng</p>
+                            </div>
+                            <div class="col-">
+                                <h5>TẢI ỨNG DỤNG TRÊN</h5>
+                                <p>Ứng dụng mona watch hiện có sẵn trên <br>Google Play & Appstore. Tải nó ngay</p>
+                                <div class="download">
+                                    <img src="../media/img/ggplay.png" alt="">
+                                    <img src="../media/img/appstore.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <span>&copy; Bản quyền thuộc về . Thiết kế website </span>
+                </div>
+            </div>
+        </footer>
+        <div class="login-modal hide">
+            <div class="login-container">
+                <form action="">
+                    <h3>ĐĂNG NHẬP</h3>
+                    <div class="username">
+                        <img src="../media/img/user.png" alt="">
+                        <input type="text" name="" id="username" placeholder="Tài khoản">
+                    </div>
+                    <div class="password">
+                        <img src="../media/img/password.png" alt="">
+                        <input type="password" name="" id="password" placeholder="Mật khẩu">
+                    </div>
+                    <div class="checkremeber"><input type="checkbox" name="" id="ckRemember">Remember me</div>
+                    <input type="submit" value="ĐĂNG NHẬP" id="btn-login">
+                    <div class="registerQuestion">
+                        Bạn chưa có tài khoản? <a href="./frmRegister.html">Đăng ký</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function toggleModal() {
+                document.querySelector('.login-modal').classList.toggle('hide');
+            }
+            var btnLogin = document.querySelector('#login');
+            var modal = document.querySelector('.login-modal');
+
+            btnLogin.addEventListener('click', toggleModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target == modal) {
+                    toggleModal();
+                }
+            })
+        </script>
+        <script src="../JS/login.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#wishlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+#wishlist-table > tbody > tr > th {
+    border-bottom: 1px solid #c0c0c0;
+    height: 40px;
+}
+#wishlist-table > thead > tr > th > h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-left: 40px;
+}
+#wishlist-table > caption {
+    font-size: 40px;
+    color: #b8b8b8;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+tr>td {
+    font-size: 20px;
+    padding-left: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    height: 120px;
+}
+tr>td>img {
+    width: 110px;
+    height: 90px;
+}
+tr>td>button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+tr>td>button:active {
+    background-color: rgb(250, 130, 130);
+    transform: scale(1.1);
+}
+.button-remove {
+    display: flex;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c0c0c0;
+}
