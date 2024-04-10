@@ -3,7 +3,8 @@ const imageContainer = document.querySelector('.banner'),
     images = document.querySelectorAll('.slide img'),
     buttons = document.querySelectorAll('.banner-side');
 
-let imageIndex = 1, intervalID;
+let imageIndex = 1,
+    intervalID;
 
 //generate auto slide show
 const autoSlide = () => {
@@ -38,36 +39,36 @@ const updateClick = (e) => {
 buttons.forEach((img) => img.addEventListener('click', updateClick));
 
 var btnGetmore = document.querySelector('.btn-getmore');
-btnGetmore.addEventListener('click', function () {
+btnGetmore.addEventListener('click', function() {
     window.location.href = "./xemthem.html";
 })
 
 var items = document.querySelectorAll('.items');
-items.forEach(function (item) {
-    item.addEventListener('click', function () {
+items.forEach(function(item) {
+    item.addEventListener('click', function() {
         window.location.href = "./Chitietsanpham.html";
     })
 })
 
 var tabitems = document.querySelectorAll('.tab-items');
-tabitems.forEach(function (tabitem) {
-    tabitem.addEventListener('click', function () {
+tabitems.forEach(function(tabitem) {
+    tabitem.addEventListener('click', function() {
         window.location.href = "./Chitietsanpham.html";
     })
 })
 
-const goTopBtn = document.querySelector('.to-top-button');
+// const goTopBtn = document.querySelector('.to-top-button');
 
-window.addEventListener('scroll', checkHeight);
+// window.addEventListener('scroll', checkHeight);
 
-function checkHeight() {
-    if (window.scrollY > 20) {
-        goTopBtn.style.display = 'flex'; 
-    } else {
-        goTopBtn.style.display = 'none';
-    }
-}
+// function checkHeight() {
+//     if (window.scrollY > 20) {
+//         goTopBtn.style.display = 'flex'; 
+//     } else {
+//         goTopBtn.style.display = 'none';
+//     }
+// }
 
-goTopBtn.addEventListener('click', () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-})
+// goTopBtn.addEventListener('click', () => {
+//     window.scrollTo({top: 0, behavior: 'smooth'});
+// })

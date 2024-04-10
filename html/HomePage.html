@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    <button id='scrollToTop'>
+        <i class="fa-solid fa-arrow-up "></i>
+    </button>
     <div class="wrapper">
         <header>
             <div class="top-header">
@@ -309,7 +312,7 @@
                                     Quận 11, Tp.HCM</span>
                                 </div>
                                 <div class="contact-info">
-                                    <img src="../media/img/contactphonenum.png alt=" ">
+                                    <img src="../media/img/contactphonenum.png" alt=" ">
                                     <span>0123456789</span>
                                 </div>
                                 <div class="contact-info ">
@@ -359,9 +362,7 @@
                     <span>&copy; Bản quyền thuộc về . Thiết kế website </span>
                 </div>
             </div>
-            <button class="to-top-button ">
-                <i class="fa-solid fa-arrow-up "></i>
-            </button>
+
         </footer>
     </div>
     <div class="login-modal hide ">
@@ -397,6 +398,26 @@
                 toggleModal();
             }
         })
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTop").style.display = "block";
+            } else {
+                document.getElementById("scrollToTop").style.display = "none";
+            }
+        }
+
+        var btnScrollToTop = document.querySelector('#scrollToTop');
+        btnScrollToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
     <script src="../js/homepage.js "></script>
     <script src="../js/login.js "></script>
