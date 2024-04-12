@@ -2,26 +2,31 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
 .content {
     display: flex;
     width: 1440px;
     flex-direction: column;
 }
+
 .page-header-container {
     display: flex;
     width: 100%;
     justify-content: space-between;
     height: 70px;
 }
-.nav-content{
+
+.nav-content {
     display: flex;
     width: 30%;
     height: 100%;
 }
-.nav-content > h3 {
+
+.nav-content>h3 {
     font-size: 24px;
     line-height: 70px;
 }
+
 .sorting-container {
     display: flex;
     width: 40%;
@@ -30,23 +35,27 @@
     line-height: 70px;
     font-size: 20px;
 }
-.sorting-container > #sorting {
+
+.sorting-container>#sorting {
     font-size: 20px;
     width: 300px;
     height: 40px;
     align-self: center;
     padding-left: 16px;
 }
+
 .main-content {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+
 aside {
     display: flex;
     flex-direction: column;
     width: 350px;
 }
+
 .title {
     height: 60px;
     line-height: 60px;
@@ -54,6 +63,7 @@ aside {
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 .top-panel {
     margin-top: 22px;
     margin-bottom: 40px;
@@ -64,14 +74,17 @@ aside {
     height: 140px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
 }
-.top-panel > p {
+
+.top-panel>p {
     margin: 0;
     margin-left: 4px;
 }
-.top-panel > select {
+
+.top-panel>select {
     border: none;
     outline: none;
 }
+
 .column-items {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -82,27 +95,33 @@ aside {
     height: 430px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
 }
+
 .item {
     display: flex;
 }
-.item > .item-details {
+
+.item>.item-details {
     height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.item > .item-details > p {
+
+.item>.item-details>p {
     font-size: 16px;
     margin: 0;
 }
-.item > .item-details > .price {
+
+.item>.item-details>.price {
     font-weight: 700;
 }
-.item > img {
+
+.item>img {
     height: 60px;
     width: 80px;
     align-self: center;
 }
+
 .mini-blog-container {
     display: flex;
     flex-direction: column;
@@ -113,7 +132,8 @@ aside {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.mini-blog-container > .mini-blogs {
+
+.mini-blog-container>.mini-blogs {
     display: flex;
     width: 90%;
     font-size: 16px;
@@ -121,13 +141,16 @@ aside {
     align-self: center;
     cursor: pointer;
 }
-.mini-blog-container > .mini-blogs > img {
+
+.mini-blog-container>.mini-blogs>img {
     width: 80px;
     height: 80px;
 }
-.mini-blog-container > .mini-blogs:hover {
+
+.mini-blog-container>.mini-blogs:hover {
     transform: scale(1.1);
 }
+
 .items-container {
     margin-top: 20px;
     display: grid;
@@ -135,38 +158,46 @@ aside {
     grid-gap: 30px;
     align-content: flex-start;
 }
-.items-container > .card-items {
+
+.items-container>.card-items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 220px;
     height: 350px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
-.items-container > .card-items:hover {
+
+.items-container>.card-items:hover {
     transform: scale(1.1);
 }
-.items-container > .card-items > .card-items-content {
+
+.items-container>.card-items>.card-items-content {
     height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.items-container > .card-items > .card-items-content > h5,
-.items-container > .card-items > .card-items-content > a {
+
+.items-container>.card-items>.card-items-content>h5,
+.items-container>.card-items>.card-items-content>a {
     font-size: 22px;
     font-weight: 700;
     margin: 0;
     color: black;
 }
-.items-container > .card-items > .card-items-content > p {
+
+.items-container>.card-items>.card-items-content>p {
     font-size: 16px;
     margin: 0;
     color: #C89979;
 }
-.items-container > .card-items > .card-items-content > button {
+
+.items-container>.card-items>.card-items-content>button {
     width: 160px;
     height: 40px;
     border: none;
@@ -178,12 +209,14 @@ aside {
     font-size: 16px;
     font-weight: 700;
 }
-.items-container > .card-items > .card-items-content > button:hover {
+
+.items-container>.card-items>.card-items-content>button:hover {
     background-color: #C89979;
     opacity: 0.8;
     transform: scale(1.1);
 }
-.items-container > .card-items > .card-items-content > button:active {
+
+.items-container>.card-items>.card-items-content>button:active {
     background-color: #C89979;
     transform: scale(0.9);
 }

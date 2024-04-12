@@ -194,6 +194,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .line-items>.items>.item-name {
@@ -224,6 +225,7 @@
     width: 180px;
     outline: none;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -327,12 +329,14 @@
 }
 
 .tab-items-container>.tab-items {
-    width: 220px;
+    width: 222px;
     height: 355px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .tab-items-container>.tab-items:hover {
@@ -363,7 +367,7 @@
 }
 
 .tab-items-container>.tab-items>.tab-items-details>.add-to-shoppingbag {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     background-color: #EC7171;
     color: white;
@@ -371,6 +375,7 @@
     width: 120px;
     outline: none;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 

@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .wrapper header {
@@ -211,7 +213,7 @@
 }
 
 .nav {
-    width: 800px;
+    width: 60%;
     height: 100%;
     justify-content: space-around;
     font-size: 16px;
@@ -226,7 +228,7 @@
 
 .nav-item>a:hover {
     color: #C89979;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .nav-item .active {
@@ -297,47 +299,17 @@ footer {
     background-color: #C78F6F;
 }
 
-.top-footer {
-    width: 100%;
-    height: 500px;
-}
-
-.bottom-footer {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    border-top: 1px solid #d5d5d5;
-    background-color: #333;
-}
-
-.bottom-footer>span {
-    font-size: 20px;
-    color: #fff;
-    align-self: center;
-    width: 460px;
-}
-
-.bottom-footer>img {
-    align-self: center;
-}
-
-.row {
-    width: 100%;
-    justify-content: space-between;
-}
-
-.col->p>a {
+[class*=col-]>p>a {
     color: #fff;
 }
 
-.col->p>a:hover {
+[class*=col-]>p:hover>a {
     color: #DBAA8B;
     text-decoration: none;
 }
 
-.col->p {
-    font-size: 20px;
+[class*=col-]>p {
+    font-size: 16px;
 }
 
 .contact-info {
@@ -346,7 +318,7 @@ footer {
 }
 
 .contact-info>span {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     align-self: center;
     padding-left: 10px;
