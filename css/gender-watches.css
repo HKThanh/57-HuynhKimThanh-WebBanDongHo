@@ -41,7 +41,7 @@
     width: 300px;
     height: 40px;
     align-self: center;
-    padding-left: 16px;
+    padding-left: 10px;
 }
 
 .main-content {
@@ -61,17 +61,17 @@ aside {
     line-height: 60px;
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .top-panel {
     margin-top: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    height: 140px;
+    height: 60px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -81,13 +81,15 @@ aside {
 }
 
 .top-panel>select {
+    width: 90%;
     border: none;
     outline: none;
+    transform: translateX(5%);
 }
 
 .column-items {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,6 +100,11 @@ aside {
 
 .item {
     display: flex;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: whitesmoke;
 }
 
 .item>.item-details {
@@ -129,7 +136,7 @@ aside {
     width: 100%;
     height: 576px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -177,6 +184,7 @@ aside {
 }
 
 .items-container>.card-items>.card-items-content {
+    width: 200px;
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -185,14 +193,18 @@ aside {
 
 .items-container>.card-items>.card-items-content>h5,
 .items-container>.card-items>.card-items-content>a {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0;
     color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .items-container>.card-items>.card-items-content>p {
     font-size: 16px;
+    font-weight: 600;
     margin: 0;
     color: #C89979;
 }
@@ -208,6 +220,7 @@ aside {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+    align-self: center;
 }
 
 .items-container>.card-items>.card-items-content>button:hover {
