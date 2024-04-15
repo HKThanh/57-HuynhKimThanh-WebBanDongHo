@@ -145,6 +145,17 @@
                 </tbody>
 
             </table>
+            <div class="d-flex justify-content-end mt-3">
+                <div class="total-price">
+                    <h4>Tổng cộng: 2.800.000 &#8363;</h4>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="btn-checkout">
+                    <button type="button" class="btn btn-success btn-lg" id="btnTT">THANH TOÁN</button>
+                </div>
+            </div>
             <div class="row mt-4">
                 <div class="col-12">
                     <p class="">Bạn có thể xem thêm sản phẩm tại đây:
@@ -253,6 +264,12 @@
                 if (e.target == modal) {
                     toggleModal();
                 }
+            })
+
+            var btnTT = document.querySelector('#btnTT');
+            btnTT.addEventListener('click', function() {
+                alert('Chuyển tới trang thanh toán');
+                window.location.href = './PaymentPage.html';
             })
         </script>
         <script src="../js/login.js"></script>
