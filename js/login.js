@@ -3,26 +3,28 @@ var password = document.querySelector('#password');
 
 let buttonLogin = document.querySelector("#btn-login");
 
-// get user
-const getUser = async() => {
-        const response = await fetch(apiUser);
-        const data = await response.json();
-        return data;
-    }
-    // login
-buttonLogin.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (username.value == "" || password.value == "") {
-        alert("Please enter your username and password");
+//load localStorage to html
+let users = JSON.parse(localStorage.getItem('data')) || [];
+
+//Login and move to home page if success and change name in home page
+buttonLogin.addEventListener('click', checkLogin);
+
+// checkLogin
+function checkLogin() {
+    let user = users.find(user => user.username === username.value && user.password === password.value);
+    if (user) {
+        alert('Đăng nhập thành công');
+        window.location.href = './HomePage.html';
     } else {
-        if (username.value == "admin" && password.value == "admin") {
-            alert("Login success");
-            var modal = document.querySelector(".login-modal");
-            modal.style.display = "none";
-            var login = document.querySelector("#login");
-            login.outerHTML = '<a href="./ThongTinTaiKhoan.html" id="user">' + 'Chào mừng, ' + ' ' + user.username + '</a>';
-        } else {
-            alert("Login failed");
-        }
+        alert('Tài khoản hoặc mật khẩu không chính xác');
     }
-});
+}
+
+// checkLogin when open login page
+function checkLoginWhenOpen() {
+    let user = users.find(user => user.username === username.value && user.password === password.value);
+    if (user) {
+        let name = user.username;
+        document.querySelector('#login').innerHTML = name;
+    }
+}

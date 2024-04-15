@@ -40,35 +40,19 @@ buttons.forEach((img) => img.addEventListener('click', updateClick));
 
 var btnGetmore = document.querySelector('.btn-getmore');
 btnGetmore.addEventListener('click', function() {
-    window.location.href = "./xemthem.html";
+    window.location.href = "./MoreWatchesSite.html";
 })
 
 var items = document.querySelectorAll('.items');
 items.forEach(function(item) {
     item.addEventListener('click', function() {
-        window.location.href = "./Chitietsanpham.html";
+        window.location.href = "./ProductDetailPage.html";
     })
 })
 
 var tabitems = document.querySelectorAll('.tab-items');
 tabitems.forEach(function(tabitem) {
     tabitem.addEventListener('click', function() {
-        window.location.href = "./Chitietsanpham.html";
+        window.location.href = "./ProductDetailPage.html";
     })
 })
-
-// const goTopBtn = document.querySelector('.to-top-button');
-
-// window.addEventListener('scroll', checkHeight);
-
-// function checkHeight() {
-//     if (window.scrollY > 20) {
-//         goTopBtn.style.display = 'flex'; 
-//     } else {
-//         goTopBtn.style.display = 'none';
-//     }
-// }
-
-// goTopBtn.addEventListener('click', () => {
-//     window.scrollTo({top: 0, behavior: 'smooth'});
-// })
